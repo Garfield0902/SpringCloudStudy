@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: ribbon-consumer
+
+server:
+  port: 8765
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://peer1:8761/eureka/,http://peer2:8762/eureka/

@@ -1,0 +1,13 @@
+eureka:
+  instance:
+    hostname: peer1
+  server:
+    #    关闭自我保护
+    enable-self-preservation: false
+    #清理服务器
+    eviction-interval-timer-in-ms: 5000
+  client:
+    service-url:
+      defaultZone: http://peer2:8762/eureka/
+
+

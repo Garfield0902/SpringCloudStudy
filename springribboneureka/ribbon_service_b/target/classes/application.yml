@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    # 通用名字,其他环境可以覆盖：为你的服务起个名字，该名字将注册到eureka注册中心
+    name: test-service
+
+server:
+  port: 8764
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
